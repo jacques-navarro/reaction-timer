@@ -1,4 +1,8 @@
-# reaction-timer
+![](reaction-timer.png)
+
+# Reaction Timer
+
+A reaction timer application that follows the [Net Ninja's Vue course part #6](https://youtu.be/bc6czIBLKTg).
 
 ## Project setup
 ```
