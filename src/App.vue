@@ -1,14 +1,28 @@
 <template>
   <h1>Reaction Timer</h1>
+  <button @click="start">Play</button>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  components: {
-    
-  }
-}
+  name: "App",
+  components: {},
+
+  data() {
+    return {
+      isPlaying: false,
+      delay: null,
+    };
+  },
+
+  methods: {
+    start() {
+      this.delay = Math.floor(Math.random() * 5000) + 2000
+      this.isPlaying = true
+      console.log(`Delay: ${this.delay}`)
+    },
+  },
+};
 </script>
 
 <style>
